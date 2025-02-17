@@ -1,19 +1,34 @@
-## Getting Started
+# Projeto iPhone - Modelagem e Implementação
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é um projeto solicitado no Bootcamp da DIO e simula a modelagem e a implementação de funcionalidades de um **iPhone**, abordando três funcionalidades principais:
 
-## Folder Structure
+- **Reprodutor Musical**
+- **Aparelho Telefônico**
+- **Navegador na Internet**
 
-The workspace contains two folders by default, where:
+## Funcionalidades
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **Reprodutor Musical**: Permite ao usuário tocar, pausar e selecionar músicas.
+- **Aparelho Telefônico**: Permite ao usuário fazer chamadas, atender ligações e iniciar o correio de voz.
+- **Navegador na Internet**: Permite ao usuário exibir páginas da web, adicionar novas abas e atualizar páginas.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Estrutura do Código
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+O código é estruturado utilizando **interfaces** para representar os diferentes componentes de funcionalidades do iPhone. A classe principal **iPhone** implementa essas interfaces, fornecendo as funcionalidades desejadas.
 
-## Dependency Management
+### Classes e Interfaces
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-# iphone-uml
+1. **Interfaces**:
+   - `ReprodutorMusical`: Métodos para tocar, pausar e selecionar música.
+   - `AparelhoTelefonico`: Métodos para ligar, atender e iniciar o correio de voz.
+   - `NavegadorInternet`: Métodos para exibir páginas, adicionar novas abas e atualizar páginas.
+
+2. **Classe Principal**:
+   - `iPhone`: Implementa as interfaces e possui as funcionalidades de **ReprodutorMusical**, **AparelhoTelefonico** e **NavegadorInternet**.
+
+## Diagrama UML
+
+A estrutura do projeto é representada pelo diagrama UML abaixo, que mostra como as interfaces e a classe principal se relacionam:
+
+![Diagrama UML](src/img/diagramaUML.svg)
+
